@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Dandi Fahmi – Portfolio</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in-up {
+        opacity: 0;
+        animation: fadeInUp 1s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-gray-600">
+      <nav class="text-white container mx-auto py-4 flex justify-between items-center">
+        <a href="#" class="text-3xl font-bold">Portofolio</a>
+        <ul class="hidden md:flex">
+          <li class="px-4 py-1 hover:text-gray-400"><a href="#layanan">Layanan</a></li>
+          <li class="px-4 py-1 hover:text-gray-400"><a href="#portofolio">Portofolio</a></li>
+          <li class="px-4 py-1 hover:text-gray-400"><a href="#tentang">Tentang</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 h-screen flex items-center justify-center text-white text-center px-4">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 fade-in-up" style="animation-delay: 0.2s">Halo!, Saya Dandi Fahmi Ridhoka</h1>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 fade-in-up" style="animation-delay: 0.4s">Saya Seorang</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-10 fade-in-up" style="animation-delay: 0.6s">Front-End Developer | Artist | Designer</h2>
+        <a href="#portofolio" class="bg-red-500 text-white px-5 py-2 rounded-xl hover:bg-yellow-500 fade-in-up" style="animation-delay: 0.8s">Lihat Proyek Saya</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="layanan" class="bg-gray-600 py-20 px-4">
+      <div class="container mx-auto">
+        <h3 class="text-4xl md:text-5xl font-bold text-center mb-5 text-white">Layanan yang Saya Tawarkan</h3>
+        <p class="text-center text-white mb-10">Berikut adalah beberapa keahlian dan layanan profesional yang saya sediakan untuk mendukung kebutuhan digital Anda.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex bg-white rounded-xl p-6 space-x-4 items-start">
+            <img src="gambar html.png" alt="HTML Icon" width="120" height="120" />
+            <div>
+              <h4 class="text-2xl font-bold mb-1">HTML</h4>
+              <p class="text-gray-600">Membangun struktur web yang rapi dan semantik menggunakan HTML untuk memastikan pengalaman pengguna yang optimal dan mudah dikembangkan.</p>
+            </div>
+          </div>
+
+          <div class="flex bg-white rounded-xl p-6 space-x-4 items-start">
+            <img src="css_logo_120x120.png" alt="CSS Icon" width="120" height="120" />
+            <div>
+              <h4 class="text-2xl font-bold mb-1">CSS</h4>
+              <p class="text-gray-600">Mengoptimalkan tampilan dan kenyamanan pengguna melalui styling CSS yang konsisten, responsif, dan estetis.</p>
+            </div>
+          </div>
+
+          <div class="flex bg-white rounded-xl p-6 space-x-4 items-start">
+            <img src="logojav.png" alt="JavaScript Icon" width="120" height="120" />
+            <div>
+              <h4 class="text-2xl font-bold mb-1">JavaScript</h4>
+              <p class="text-gray-600">Mengembangkan interaktivitas dan fungsionalitas dinamis pada web dengan JavaScript untuk meningkatkan pengalaman pengguna secara menyeluruh.</p>
+            </div>
+          </div>
+
+          <div class="flex bg-white rounded-xl p-6 space-x-4 items-start">
+            <img src="unnamed.png" alt="UI UX Icon" width="120" height="120" />
+            <div>
+              <h4 class="text-2xl font-bold mb-1">Desain UI/UX</h4>
+              <p class="text-gray-600">Merancang antarmuka dan pengalaman pengguna yang intuitif, estetis, dan berorientasi pada kebutuhan nyata pengguna.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portofolio" class="bg-gray-900 py-20 px-4">
+      <h3 class="text-4xl md:text-5xl font-bold text-center mb-5 text-white">Portofolio Proyek</h3>
+      <p class="text-center text-gray-500 mb-10 text-white">Beberapa proyek yang telah saya kerjakan, mencerminkan kemampuan serta gaya desain saya dalam pengembangan web dan aplikasi.</p>
+      <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+        <div>
+          <img src="ipo.jpg" alt="Web Papalopa" />
+          <h4 class="bg-gray-300 text-center py-4 font-bold hover:bg-red-500 transition">VOT APPS</h4>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="bg-gray-600 py-20 px-4">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <!-- Image -->
+          <div class="flex justify-center">
+            <img src="dandiaja.jpg" alt="Dandi Fahmi" class="rounded-lg shadow-lg" />
+          </div>
+
+          <!-- Text -->
+          <div>
+            <h3 class="text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">Tentang Saya</h3>
+            <p class="text-xl text-black text-center md:text-left">Halo! Saya adalah seorang mahasiswa sekaligus pengembang antarmuka pengguna yang berdedikasi, dengan semangat besar dalam menciptakan pengalaman digital yang bermakna.</p>
+            <p class="text-black text-justify text-xl">Dengan perhatian penuh pada detail dan pemahaman mendalam terhadap kebutuhan pengguna, saya menciptakan antarmuka yang modern, intuitif, dan fungsional.</p>
+            <p class="text-black text-justify text-xl">
+              Saya memiliki keahlian dalam pengembangan web responsif yang mampu beradaptasi di berbagai perangkat, manajemen konten yang efisien dan terstruktur, serta optimalisasi performa situs untuk menghadirkan pengalaman yang cepat
+              dan mulus.
+            </p>
+            <p class="text-black text-justify text-xl">
+              Bagi saya, desain dan performa adalah satu kesatuan yang tidak bisa dipisahkan. Karena itu, saya terus belajar, bereksperimen, dan berinovasi agar setiap solusi digital yang saya hasilkan dapat memberikan nilai dan dampak
+              nyata bagi pengguna maupun klien.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
